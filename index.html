@@ -1,1 +1,773 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mo - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/cowboy.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Mo" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Mo">Mo</h1>
+
+          <p class="title">ML Research Scientist</p>
+        </div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mo-ziyi-mo" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?hl=en&user=5ebKaMwAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer" title="Google Scholar" class="social-link">
+              <ion-icon name="school-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/ziyimo" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ziyimo@gmail.com" class="contact-link">ziyimo@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+19292807458" class="contact-link">+1 (929) 280-7458</a>
+            </div>
+
+          </li>
+
+          <!-- 
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sacramento, California, USA</address>
+            </div>
+
+          </li> -->
+
+        </ul>
+
+        <div class="separator"></div>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Miscellaneous</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a Machine Learning Research Scientist at Meta in Menlo Park, CA, currently working on feed ranking. Notwithstanding my passion for ML and generative AI, I was trained as a population geneticist. Before joining Meta, my research effort was at the intersection of genomics and machine learning. During my PhD, I developed novel deep learning methods for deriving evolutionary insights from large-scale population genomic data. I also worked on biomedical ML projects as a Research Intern at Health Futures, part of Microsoft Research. All the way back in undergrad, my first foray into computational research was through building high-throughput bioinformatic pipelines for NGS data analysis.
+          </p>
+
+          <p>
+            When I am not sitting in front of a screen, I enjoy (but not necessarily excel at) lifting, snowboarding, climbing and board games. I also really want to get into surfing now that I've moved to California. When I have a bit more free time, I spend most of it traveling, where I get to experience different cultures, learn (just the basics of) a new language, hear and share fun stories.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i do</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-DL.svg" alt="deep learning icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                <p class="service-item-text">
+                  Turning scientific questions or business needs into well-defined machine learning problems and developing innovative and tailored solutions with state-of-the-art tools and models.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-DNA.svg" alt="genomics icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Genomics</h4>
+
+                <p class="service-item-text">
+                  Developing scalable and robust bioinformatic pipelines to derive insights from biobank-scale genomic datasets.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Machine Learning Research Scientist</h4>
+
+              <span>2024 — Present</span>
+
+              <p class="timeline-text">
+                Meta Platforms, Inc.
+              </p>
+              <p class="timeline-text">
+                Menlo Park, CA
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Graduate Researcher</h4>
+
+              <span>2019 — 2024</span>
+
+              <p class="timeline-text">
+                Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory
+              </p>
+              <p class="timeline-text">
+                Cold Spring Harbor, NY
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Intern</h4>
+
+              <span>2022</span>
+
+              <p class="timeline-text">
+                Health Futures, Microsoft Research
+              </p>
+              <p class="timeline-text">
+                Redmond, WA
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Undergraduate Research Assistant</h4>
+
+              <span>2016 — 2018</span>
+
+              <p class="timeline-text">
+                Center for Genomics and Systems Biology, New York University
+              </p>
+              <p class="timeline-text">
+                New York, NY & Abu Dhabi, UAE
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cold Spring Harbor Laboratory (CSHL) School of Biological Sciences</h4>
+
+              <span>August 2018 — February 2024</span>
+
+              <p class="timeline-text">
+                Ph.D. Quantitative Biology
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">New York University (NYU) Abu Dhabi</h4>
+
+              <span>August 2014 — May 2018</span>
+
+              <p class="timeline-text">
+                B.S. Biology, minor in Computer Science, <i>summa cum laude</i>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Deep Neural Networks</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Bioinformatics</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ol class="project-list">
+            <li class="project-item">
+              <h4 class="h4 project-item-title"> Retrieval-augmented generation (RAG) for CSHL scientific archive </h4> 
+              <div class="project-links">
+              <a href="https://github.com/tomadams/libarxiv-llms" target="_blank" rel="noopener noreferrer" title="GitHub (private for now)" class="project-link">
+                <ion-icon name="logo-github"></ion-icon> </a> &nbsp;&nbsp;
+              <!-- <a href="https://github.com/ziyimo" target="_blank" rel="noopener noreferrer" title="Manuscript" class="project-link">
+                <ion-icon name="document-outline"></ion-icon> </a> -->
+              </div>
+              <p class="project-text">
+                Towards the end of my tenure at CSHL, I kickstarted an experimental project to design and implement an end-to-end system powered by LLMs that can serve the most relevant content from the vast multi-modal scientific archive managed by the CSHL library. This project is still ongoing under the leadership of <a style="display: inline; color: grey;" href="https://facultyprofiles.cshl.edu/ludmila.pollock"> Mila Pollock </a> after my departure from CSHL.
+              </p>
+            </li>
+
+            <li class="project-item">
+              <h4 class="h4 project-item-title"> Transfer learning framework for simulated genomic data </h4> 
+              <div class="project-links">
+              <a href="https://github.com/ziyimo/popgen-dom-adapt" target="_blank" rel="noopener noreferrer" title="GitHub" class="project-link">
+                <ion-icon name="logo-github"></ion-icon> </a> &nbsp;&nbsp;
+              <a href="https://doi.org/10.1371/journal.pgen.1011032" target="_blank" rel="noopener noreferrer" title="Manuscript" class="project-link">
+                <ion-icon name="document-outline"></ion-icon> </a>
+              </div>
+              <p class="project-text">
+                For my primary PhD work, I created domain-adaptive models to combat simulation mis-specification, which is a fundamental challenge in population genetic inference tasks. My framework has been adopted by at least two other research groups to improve their ML models for tackling key questions in population genetics.
+              </p>
+            </li>
+
+            <li class="project-item">
+              <h4 class="h4 project-item-title"> Deep learning models for biobank-scale genomic data </h4> 
+              <div class="project-links">
+              <a href="https://github.com/CshlSiepelLab/arg-selection" target="_blank" rel="noopener noreferrer" title="GitHub" class="project-link">
+                <ion-icon name="logo-github"></ion-icon> </a> &nbsp;&nbsp;
+              <a href="https://doi.org/10.1093/molbev/msab332" target="_blank" rel="noopener noreferrer" title="Manuscript" class="project-link">
+                <ion-icon name="document-outline"></ion-icon> </a>
+              </div>
+              <p class="project-text">
+                At the start of my PhD, I co-led my first substantial machine learning project with a postdoctoral researcher, <a style="display: inline; color: grey;" href="https://www.linkedin.com/in/hussein-a-hijazi-40484a2b/"> Hussein Hejase </a>. We developed novel deep learning models and engineered features suited for complex evolutionary data structures to detect signals of natural selection from population genomic data. Our models achieved up to 50% reduction in error compared to previous models.
+              </p>
+            </li>
+
+            <li class="project-item">
+              <h4 class="h4 project-item-title"> Probabilistic epidemiological modeling </h4> 
+              <div class="project-links">
+              <a href="https://github.com/ziyimo/circ-immu" target="_blank" rel="noopener noreferrer" title="GitHub" class="project-link">
+                <ion-icon name="logo-github"></ion-icon> </a> &nbsp;&nbsp;
+              <a href="https://doi.org/10.1101/2021.03.29.21254556" target="_blank" rel="noopener noreferrer" title="Manuscript" class="project-link">
+                <ion-icon name="document-outline"></ion-icon> </a>
+              </div>
+              <p class="project-text">
+                During the COVID-19 pandemic, I led an epidemiological data science project with a small team of researchers across two groups at CSHL. Our team built probabilistic models and designed statistical tests for the project. Our findings support the hypothesis that circadian fluctuation of innate immunity influences the transmission of respiratory diseases.
+              </p>
+            </li>
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="miscellaneous" data-page="miscellaneous">
+
+        <header>
+          <h2 class="h2 article-title">Cool Places</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/d/embed?mid=1NIS9o8RfGhGVaHFiLZ38Pp_s4Bit_D4&ehbc=2E312F&noprof=1"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <!-- <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section> -->
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <div class="footer"> Web design adapted from the <a style="display: inline; color: grey;" href="https://github.com/codewithsadee/vcard-personal-portfolio"> vCard template </a> under an <a style="display: inline; color: grey;" href="https://github.com/codewithsadee/vcard-personal-portfolio/blob/master/LICENSE">MIT license</a> </div>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
